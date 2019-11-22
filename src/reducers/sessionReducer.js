@@ -3,7 +3,7 @@ import { SET_SESSION, SET_SESSION_LOADING, SET_SESSION_ERROR } from '../actions/
 const initialState = {
   _id: null,
   username: null,
-  loading: true,
+  loading: false,
   error: null
 };
 

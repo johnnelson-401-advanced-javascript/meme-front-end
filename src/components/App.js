@@ -18,9 +18,11 @@ const PrivateRoute = ({ ...rest }) => {
   const sessionId = useSelector(getSessionId);
   const loading = useSelector(getSessionLoading);
   const dispatch = useDispatch();
+
   useEffect(() => {
-    if(!sessionId) dispatch(sessionVerify);
-  }, []);
+    if(!sessionId) dispatch(sessionVerify());
+  }, [sessionId]);
+
   //logged out
   if(loading) {
     return <h1>Loading . . .</h1>;
