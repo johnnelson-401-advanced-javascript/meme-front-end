@@ -8,6 +8,7 @@ const Header = () => (
       <Link to="/memes"> My Memes </Link>
       <Link to="/"> Create Meme </Link>
     </nav>
+    <p>Clicking Directly on a Meme will Save it Locally</p>
   </header>
 );
 
